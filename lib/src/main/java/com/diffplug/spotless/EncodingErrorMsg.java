@@ -39,7 +39,7 @@ class EncodingErrorMsg {
 			return null;
 		}
 
-		// sometimes the 'ï¿½' is really in a file, such as for *this* file
+		// sometimes the '�' is really in a file, such as for *this* file
 		// so we have to handle that corner case
 		ByteBuffer byteBuf = ByteBuffer.wrap(bytes);
 		CharBuffer charBuf = CharBuffer.allocate(chars.length());
